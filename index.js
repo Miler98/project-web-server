@@ -5,9 +5,6 @@ app.set('view engine', 'hbs');
 require('dotenv').config();
 const port = process.env.PORT;
 
-
-
-
 app.use(express.static('public'))
 var hbs = require('hbs')
 hbs.registerPartials(__dirname + '/views/partials')
@@ -15,19 +12,19 @@ hbs.registerPartials(__dirname + '/views/partials')
 app.get('/', function(req, res){
     res.render('home', {
         titulo: "Topicos",
-        nombre: "Miler"
+        nombre: "Miler España"
     })
 })
 app.get('/generic', function(req, res){
     res.render('generic', {
         titulo: "Topicos",
-        nombre: "Miler"
+        nombre: "Miler España"
     })
 })
 app.get('/elements', function(req, res){
     res.render('elements', {
         titulo: "Topicos",
-        nombre: "Miler"
+        nombre: "Miler España"
     })
 })
 
